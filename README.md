@@ -1,7 +1,7 @@
 Playing User Interactions Common
 ================================
 
-User interactions common for playful applications.
+User interactions common utilites for building playful applications.
 
 # Usage
 
