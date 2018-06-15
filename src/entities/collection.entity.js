@@ -27,6 +27,6 @@ CollectionEntity.expose('metadata', (obj, options) => {
   return fp.sortKeys(obj.metadata);
 });
 
-CollectionEntity.excepts('destroyedAt');
+CollectionEntity.excepts('_id');
 
 export default CollectionEntity.asImmutable();

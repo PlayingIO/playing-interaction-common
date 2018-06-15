@@ -27,6 +27,6 @@ FavoriteEntity.expose('metadata', (obj, options) => {
   return fp.sortKeys(obj.metadata);
 });
 
-FavoriteEntity.excepts('destroyedAt');
+FavoriteEntity.excepts('_id');
 
 export default FavoriteEntity.asImmutable();
