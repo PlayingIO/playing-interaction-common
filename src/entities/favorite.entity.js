@@ -29,4 +29,4 @@ FavoriteEntity.expose('metadata', (obj, options) => {
 
 FavoriteEntity.discard('_id');
 
-export default FavoriteEntity.asImmutable();
+export default FavoriteEntity.freeze();

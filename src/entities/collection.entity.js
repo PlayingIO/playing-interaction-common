@@ -29,4 +29,4 @@ CollectionEntity.expose('metadata', (obj, options) => {
 
 CollectionEntity.discard('_id');
 
-export default CollectionEntity.asImmutable();
+export default CollectionEntity.freeze();
