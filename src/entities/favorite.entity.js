@@ -1,6 +1,6 @@
-import Entity from 'mostly-entity';
-import fp from 'mostly-func';
-import { BlobEntity, DocTypes } from 'playing-content-common';
+const Entity = require('mostly-entity');
+const fp = require('mostly-func');
+const { BlobEntity, DocTypes } = require('playing-content-common');
 
 const FavoriteEntity = new Entity('Favorite', {
   file: { using: BlobEntity },
@@ -29,4 +29,4 @@ FavoriteEntity.expose('metadata', (obj, options) => {
 
 FavoriteEntity.discard('_id');
 
-export default FavoriteEntity.freeze();
+module.exports = FavoriteEntity.freeze();

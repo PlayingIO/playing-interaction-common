@@ -1,6 +1,6 @@
-import { DocTypes } from 'playing-content-common';
+const { DocTypes } = require('playing-content-common');
 
-export default Object.assign({
+module.exports = Object.assign({
   collection: {
     "packages": "playing-interaction-elements",
     "type":"Collection",

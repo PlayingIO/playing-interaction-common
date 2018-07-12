@@ -1,6 +1,6 @@
-import Entity from 'mostly-entity';
-import fp from 'mostly-func';
-import { BlobEntity, DocTypes } from 'playing-content-common';
+const Entity = require('mostly-entity');
+const fp = require('mostly-func');
+const { BlobEntity, DocTypes } = require('playing-content-common');
 
 const CollectionEntity = new Entity('Collection', {
   file: { using: BlobEntity },
@@ -29,4 +29,4 @@ CollectionEntity.expose('metadata', (obj, options) => {
 
 CollectionEntity.discard('_id');
 
-export default CollectionEntity.freeze();
+module.exports = CollectionEntity.freeze();

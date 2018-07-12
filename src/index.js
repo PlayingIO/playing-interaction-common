@@ -1,8 +1,8 @@
-import DocTypes from './constants/doc-types';
-import CollectionEntity from './entities/collection.entity';
-import FavoriteEntity from './entities/favorite.entity';
+const DocTypes = require('./constants/doc-types');
+const CollectionEntity = require('./entities/collection.entity');
+const FavoriteEntity = require('./entities/favorite.entity');
 
-export default {
+module.exports = {
   DocTypes,
   CollectionEntity,
   FavoriteEntity
