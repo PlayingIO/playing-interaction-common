@@ -16,7 +16,7 @@ CollectionEntity.expose('parent', (obj, options) => {
 
 CollectionEntity.expose('metadata', (obj, options) => {
   obj.metadata = obj.metadata || {};
-  
+
   const Types = options.DocTypes || DocTypes;
 
   if (Types[obj.type]) {

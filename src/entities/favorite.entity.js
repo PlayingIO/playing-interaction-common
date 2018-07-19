@@ -16,7 +16,7 @@ FavoriteEntity.expose('parent', (obj, options) => {
 
 FavoriteEntity.expose('metadata', (obj, options) => {
   obj.metadata = obj.metadata || {};
-  
+
   const Types = options.DocTypes || DocTypes;
 
   if (Types[obj.type]) {
